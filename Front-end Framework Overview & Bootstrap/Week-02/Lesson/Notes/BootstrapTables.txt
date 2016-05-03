@@ -1,0 +1,19 @@
+Bootstrap Tables:
+  -used to display tabular data in web page
+  -been hijacked by website designers to design the position web content
+  -always start by assigning the table class to tables
+    -<table class="table">
+     </table>
+
+  -table-striped for zebra striped rows
+  -table-bordered for borders to table cells
+  -table-hover for highlighting rows when you hover over a row
+  -table-condensed for cutting the cell padding in half
+  -table-responsive for making the tables response, can horizontally scroll
+   tables on screen size less than 768px
+
+  -contextual classes
+    -individual rows or cells can be colored using the following classes:
+      active, success, info, warning and danger
+      -<tr class="success">...</tr>
+      -<td class="danger">...</td>

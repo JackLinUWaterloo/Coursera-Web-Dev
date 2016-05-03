@@ -1,0 +1,38 @@
+The Model View Controller Framework:
+    -software engineering architecture pattern
+        -isolation of domain logic from user interface
+        -permits independent development, testing and maintenance (separation of
+        concerns)
+
+    Design patterns:
+        -well-documented solution to a recurring problem
+            -also referred to as an architectural pattern
+        -software design pattern
+            -reusable solution to commonly occurring problems
+
+    MVC framework:
+        Model:
+            -manages the behaviour and data of the application domain
+            -responds to requests for information about its state (usually from
+            from the view)
+            -response to instructions to change state (usually from the controller)
+            -in event-driven systems, the model notifies observers (usually view)
+            when the information changes so that they can react
+        View:
+            -renders the model into a form suitable for interaction, typically a
+            user interface element
+            -multiple views can exist for a single model for different purposes
+            -a viewport typically has a one to one correspondence with a display
+            surface and knows how to render it
+        Controller:
+            -receives user input and initiates a response by making calls on models
+            objects
+            -a controller accepts input from the user and instructs the model and
+            viewport to perform actions based on that input
+
+    Model View View-Model (MVVM):
+        -descendent of MVC
+        -sometimes called Model View-Binder
+        -View model
+            -abstraction of the view that exposes public properties and commands
+            -declarative data binding

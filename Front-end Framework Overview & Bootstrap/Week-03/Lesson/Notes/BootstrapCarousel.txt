@@ -1,0 +1,3 @@
+Bootstrap carousel:
+  -allows the inclusion of a slideshow with captions
+  -manual controls for the carousel

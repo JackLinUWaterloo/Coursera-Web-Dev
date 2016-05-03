@@ -1,0 +1,17 @@
+Angular Filters:
+    -allows us to format the value of an expression for display to the end user
+        -they do not modify the underlying data
+    -filters can be used in view templates, controllers or services
+    -e.g. dish.price | currency, price values gets converted to currency
+        -4.99 > $4.99
+
+    Built-in filters:
+        -uppercase/lowercase: converts the text
+        -currency: formats the number as a currency
+        -date: formats the date as per the formatting specified
+        -filter: selects a subset of an array based on the criteria specified and
+        returns a new array
+        -orderBy: orders the array based on the criteria specifed
+        -others include: json, limitTo
+
+    -user pipe command to apply filters '|'

@@ -1,0 +1,20 @@
+More on Arrays
+
+sort(), sorts an array
+
+reverse(), reverse the array oder
+
+array.sort().reverse() is allowed
+
+indexOf(element), finds the index of the first occurence of target in array
+
+indexOf(element, startPosition), starts at a certain position
+
+lastIndexOf(target), finds target in array, starting from the last element in array
+
+slice(startPosition), extract part of an array from start position to the end.
+slice(startPosition, endPosition), extracts with a specific range
+
+splice(position, quantity), used when you want to remove elements anywhere from an array
+splice(position, 0, element) can also be used when you want to add element(s) anywhere to an array
+splice(positioin, quantity, replacements) can be used to replace 

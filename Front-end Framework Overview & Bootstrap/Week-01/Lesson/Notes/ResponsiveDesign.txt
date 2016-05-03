@@ -1,0 +1,20 @@
+Responsive design:
+  -why do so?
+    -users increasingly accessing websites from a variety of devices of
+     different screen sizes
+    -one size fits all no longer a possibility
+    -adapt to the users' 'viewport'
+      -build it into the core of the site
+
+  -mobile first design
+    -first satisfy the mobile constraints then adapt to larger screen sizes
+
+  -foundation for responsive design
+    -grid system
+    -fluid images
+    -media queries
+      -CSS technology to apply some style based on the size of the viewport
+        -e.g.
+          @media screen and (min-width: 600px) {
+            /*CSS styles customized for desktop*/
+          }

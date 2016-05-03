@@ -1,0 +1,30 @@
+CSS preprocessors: Less and Sass
+    -CSS is great for defining styles and repeatedly applying them to various
+     HTML elements
+    -CSS is limited when it comes to features like defining variables, nesting
+     selectors, expressions, functions
+     -which affects maintainability
+
+    -Less, Sass(Syntactically Awesome Style Sheets), and Stylus come in to play
+    -all are compiled into traditional CSS syntax automatically before use in
+     a web page
+
+    -typical CSS preprocessors features variables, nesting selectors, mixins,
+     functions and expressions
+
+    Less variable: @variableName: something
+
+    Sass variable: $variableName: something
+
+    -using the variables:
+        -height: @lessVar/$sassVar
+
+    -they both have variable scopes
+
+    -mixins
+        -hold multiple CSS declarations unlike variables
+        -used inside other css classes to reduce redundancy
+        -variables are allowed
+
+    -mathematical operations are allowed as well
+    -as well as imports

@@ -1,0 +1,84 @@
+Grunt:
+    -task runner based on configuration of tasks
+    -installing grunt
+        -grunt CLI (install globally)
+            -allows different Grunt versions in different projects
+    -install grunt locally on every single project
+
+    Configuring Grunt:
+        -configuration in gruntfile.js (need to specify if not named gruntfile.js)
+            module.export = function(grunt){
+                //do requires here
+                require('jit-grunt')(grunt);
+
+                //do grunt task configurations here
+                grunt.initConfig({
+
+                });
+
+                //register tasks here
+                grunt.registerTask('build', ['jshint']);
+                grunt.registerTask('default', ['build']);
+            }
+
+    File globbing patterns
+        -Grunt uses filename expansion (globbing)
+            -* matches any number of characters, but not /
+            -? matches a single character, but not /
+            -** matches any number of characters, including/, as long as it's
+            the only thing in a path part
+            -{} allows for comma-separated list of "or" expressions
+            -! at the beginning of a pattern will negate the match
+
+    JSHint:
+        -configuration:
+            jshint:{
+                options:{
+                    jshintrc:'.jshintrc',
+                    reporter:require('jshint-stylish')
+                },
+                all:{
+                    src:['Gruntfile.js', 'app/script/{,*/}*'.js]
+                }
+            }
+        -static JS code analysis tool
+        -.jshintrc: json file contains configuration for JSHint
+
+    Creating a distribution folder:
+        -your project contains many files
+            -Bower components, node modules, Less/Sass files and configuration files
+        -you may wish to generate a distribution folder
+            -contains only files essential to serve up your website
+            -compacted and minified files
+
+    Copying and Cleaning up
+        -create a distribution folder and clean up the distribution folder:
+
+    Preparing the dist folder:
+        -grunt modules:
+            -grunt-usemin
+                -umbrella task that configures and completes most of the CSS and
+                JS minification and uglification tasks
+                -flow of tasks:
+                    userminPrepare > concat > cssmin > uglify > filerev > usemin
+            -useminPrepare
+                -looks for block configuration in an html file
+                -will automatically generate configuration information for concat,
+                cssmin and uglify tasks
+            -filerev
+                -revision your files: adds revision tag to the name of your file
+                    -e.g. main.css > main.23758735.css
+            -usemin
+                -after concat, cssmin, uglify, and filerec are ran, this will
+                replace the css and JS links with the single concatenated files
+                from the dest folder
+            -watch
+                -keeps a watch on files and reruns tasks whenever changes occur
+            -connect
+                -start a server to serve the website
+        -grunt tasks
+            -register multiple tasks
+                -grunt.registerTask('build', ['clean', 'jshint', userminPrepare',
+                'concat', 'cssmin', 'uglify', 'copy', 'filerev', 'usemin']);
+                -grunt.registerTask('serve', ['build,', 'connect:dist', 'watch']);
+                -grunt.registerTask('default', ['build']);

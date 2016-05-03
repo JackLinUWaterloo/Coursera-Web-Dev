@@ -1,0 +1,51 @@
+Intro to AngularJS:
+    -Structural framework for dynamic web applications:
+        -HTML only does static documents
+        -Angular fills in the gap to support dynamic applications
+            -solving the impedance mismatch
+            -designed with CRUD applications (data-driven) in mind
+            -declarative approach
+    -HTML custom attributes
+        -data-* attributes
+        -Angular: ng-* attributes/data-ng-*
+    -e.g. ng-app, ng-bind, ng-model, ng-init, ng-repeat, etc.
+        -They are also referred to using camelCase as ngApp, ngBind, ngModel...
+        -dash-delimited attributes are used since HTML is case insensitive
+    -declarative programming
+        -declaratively call JS functions
+
+    The ngApp directive:
+        -applied to specify the root of the application
+        -applying to html tag means entire page is under the control of the
+        Angular application
+
+    The ngInit directive:
+        -use to evaluate an expression
+        -initialize a JS variable
+        -e.g. <p ng-init="index=1"><p>
+
+    Angular expressions:
+        -simple JS expressions
+            -evaluated against an Angular scope object
+            -no conditionals, loops, exceptions
+            -expressions enclosed {{ expression }}
+        -e.g. <p>6+5 = {{6+5}}</p>
+
+    The ngModel directive:
+        -binds the input value to a variable within the scope
+            -two way data binding
+        -e.g. <div class="media-body">
+                <p>{{dish.description}}</p>
+                <p>{{dish.comment}}</p>
+
+    Two-way data binding:
+        -binding an HTML or CSS property to a JS variable
+            -when the value of the variable is updated, the HTML/CSS property is
+            also updated
+            -also works vice-versa with <input> fields
+
+    The ngRepeat directive:
+        -a loop construct that loops over items in a collection or instantiates
+        a template for each item
+        -e.g. <ul class="media-list"
+                <li class="..." ng-repeat="dish in dishes">

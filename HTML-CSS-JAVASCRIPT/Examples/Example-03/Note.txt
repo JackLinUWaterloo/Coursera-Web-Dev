@@ -1,0 +1,150 @@
+The DOM(Document Object Model) - Basic concepts
+
+-when one loads something into a browser it is converted into a DOM structure
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <!--simple webpage-->
+</html>
+
+In memory, html file gets splited into different nodes (boxes).
+
+A branch is made up of different nodes which can consist of <body>, <h1>, <p>...etc.
+
+The top node is called the root, which is the html file itself.
+
+The html file gets split into body and head and then it gets further divided according to tags.
+
+The entire structure looks like a tree, which is sometimes called a tree structure.
+
+Root node is followed by parent nodes and then child nodes; nodes on the same level are called sibling nodes.
+
+The entire structure is called a Document Object Model(DOM).
+
+Table DOM structure has a table root node then a <tbody> > <tr> > <td> > <text>
+
+Whitespace nodes:
+-anything you can't see such as spacing
+-there may be a text node which contains only whitespace which are called whitespace nodes
+-these can be troublesome sometimes
+
+e.g.
+<body><p>Hello.</p></body> has 3 nodes
+
+<body>
+<p>Hello.</p>
+</body>
+^ has 4 nodes
+
+Node relationships:
+Relationship can be explored with parentNode, childNodes[], firstChild, lastChild, previousSibling, nextSibling.
+
+Find the path to a particular node:
+-function start with a node
+-type of the is added to a string
+-code moves to the parent of the node
+-if the node has a parent, repeat previous two steps
+
+code:
+function handleClick(event) {
+    //ensures this function is only triggered by the deepest node
+    event.stopPropagation();
+    
+    var node = event.target;
+    var thisPath = node.nodeName;
+    
+    while(node.parentNode) {
+        node = node.parentNode;
+        thisPath = node.nodeName + " > " + thisPath;
+    }
+    alert(thisPath);
+}
+
+//register the click event handler for all node
+function attachHandler(node) {
+    if(node == null) return;
+    node.onclick = handClick;
+    for(var i = 0; i < node.childNodes.length; i++) {
+        attachHandler(node.childNodes[i]);
+    }
+}
+
+Locating Nodes:
+-everything is in the DOM, and we can add/delete/copy/change anything, but to do this, we need to understand how to access things
+Method 1: using exact DOM path
+-hard to work out the exact path
+-prone for mistakes
+-might fail in different browsers
+
+Method 2: use getElementsByTagName()
+-requires you to knoe the exact tag name e.g. is it h2 or h3?
+-there might be serveral nodes of that type, so you need to know which it is exactly
+
+Method 3: use getElementById()
+-if you give a node a unique name
+-easiest to use if tags are IDed
+
+setAttribute() is commonly used to change something.
+e.g.
+    the_node = getElementById('thisNode');
+    the_node.setAttribute('style, 'color:red');
+    
+Creating and Adding nodes:
+    Adding to the web page:
+        -first, create whatever you want to add, whatever you create is not yet in the DOM
+        -second, add it at the desired place
+        
+        -use createElement() e.g.
+            result = document.createElement("div");
+            or
+            result = document.createTextNode("Hello");
+            
+        e.g.
+            newItem = document.createElement("hr");
+            destParent = document.getElementByTagName("body")[0];
+            destParent.insertBefore(newItem, destParent.firstChild);
+            
+        -use appendChild()
+            result = document.createTextNode("This is dynamically added Text!");
+            document.getElementById("my_text").appendChild(result);
+            
+Deleting nodes:
+    -use removeChild()
+        e.g. this_node = getElementById("myPara");
+        this_node.parentNode.removeChild(this_node);
+    -done through finding the node being removed and call its parent to remove it or find the parent of the child node then tell the parent to remove which child
+    
+    -delete all children
+        e.g. using a while loop to see if firstChild exists
+        
+Cloning nodes:
+    -Basic idea: copy and paste
+    -use node.cloneNode(), true of false goes into the parameter, true allows one to copy child nodes (copies the entire branch)
+
+Handling Mouse Events:
+Mouse events:
+    -onclick, onmousedown, onmouseup are some examples
+    -onclick = onmousedown follows by mouseup
+    -e.g.
+        <... onclick="function()">
+    -onmouseover and on mouseout are also available
+    
+Timer events:
+    -very useful for dynamic web page behaviour
+    -e.g.
+        var the_timer;
+        the_timer=setTimeout(do_something, 1000);
+    -do_something will be executed 1 second later
+    -the value 1000 is in milliseconds
+    -stopping a timer, use clearTimeout(timerName);
+    -setInterval() repeatedly does something, use clearInterval() to stop it
+    
+Adding events using JavaScript:
+    -handling through javascript by using window.onload = do_something();
+    -window.addEventListener("load", do_something); works the same way
+    -event handlers are stored in an array when multiple handlers are declared, and they will all execute, but in order
+    -when an event happens, all the handlers are executed
+    -they are executed in the order they are added
+    -use document.getElementById("theBody").removeEventListener("load", do_something);
+    

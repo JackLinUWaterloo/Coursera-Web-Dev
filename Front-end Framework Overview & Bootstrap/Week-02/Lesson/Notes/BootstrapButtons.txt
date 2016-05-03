@@ -1,0 +1,25 @@
+Bootstrap buttons:
+  Color in Bootstrap
+    -default colors specified in Bootstrap
+    -classes based on these colors can be applied to text, buttons, alerts...etc.
+      -css classes based around the colors available: text-primary, btn-success,
+       alert-danger, bg-info etc.
+
+  Bootstrap button classes:
+    -button classes can be applied to three elements
+      -<a>, <button>, <input>
+    -all these will get the button appearance
+    -only <button> can be used in nav and navbar
+
+  Bootstrap button classes:
+    -'btn +'
+      -color:
+        -'btn-default/primary/success/info/warning/danger/link'
+          -size:
+            -'btn-lg/sm/xs'
+              -btn-block
+    -btn-block can be used too
+
+    Button groups and toolbars:
+      -classes: btn-toolbar, btn-group, btn-group-vertical, btn-group-justified(expands the buttons to the entire width of the screen),
+       btn-group-*

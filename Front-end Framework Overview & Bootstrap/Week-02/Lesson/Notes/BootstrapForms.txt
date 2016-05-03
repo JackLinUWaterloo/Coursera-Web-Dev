@@ -1,0 +1,15 @@
+Bootstrap forms:
+  Basic horizontal form:
+    -<form class="form-horizontal" role="form">
+    -<div class="form-group">, includes row class
+    -<label for="firstname"....>
+    -<div class="col-sm-10">
+    -<input ... >
+
+  Inline form:
+    -form class = "form-inline"
+    -label class="sr-only" (screen reader only)
+
+  Input group with addons
+    -div class="input-group"
+    -div class="input-group-addon"

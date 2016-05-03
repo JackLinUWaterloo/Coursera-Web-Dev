@@ -1,0 +1,11 @@
+Front-end Web UI Frameworks: Intro
+  What are front-end UI frameworks?
+    -collection of ready-to-use HTML, CSS and Javascript templates for UI components:
+     typography, forms, buttons, tables, navigations, dropdowns, alerts, modals, tabs,
+     accordion, carousel...etc.
+
+  Why front-end web UI frameworks?
+    -responsive web design (mobile first), help to adapt to different screen sizes
+    -cross-browser compatibility, adjusts automatically to different browsers
+    -increased productivity
+  

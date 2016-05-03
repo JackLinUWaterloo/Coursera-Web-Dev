@@ -1,0 +1,10 @@
+Bootstrap scrollspy and affix:
+  -add data-* attribute to body of the page
+    e.g. <body data-spy="scroll" data-target="#myScrollspy" data-offset="200">
+    -data-offset tells it to track scroll after 200 px
+
+  -add a nav element to the page
+    -e.g. <nav class="hidden-xs col-sm-2" id="myScrollspy">
+      ...
+  -nav-pulls allows the elements to be sub nav bar
+  -nav-stacked allows the elements to be stacked

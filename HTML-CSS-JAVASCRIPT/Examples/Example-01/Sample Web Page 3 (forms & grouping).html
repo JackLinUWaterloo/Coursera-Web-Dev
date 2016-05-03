@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <Title>Handling Forms & Grouping</Title>
+    </head>
+    
+    <body>
+        <!--a form is used to send data from browser to server, default method is GET-->
+        <!--get method is only a few hundred letter/characters-->
+        <!--post handles larger transfer and more secure-->
+        <form action="http://ihome.ust.hk/" method="post">
+            <input type="submit">
+        </form>
+        <!--if same server-->
+        <form action="subdirectory/program.php">
+        </form>
+        <!--if same directory-->
+        <form action="program.php">
+        </form>
+        
+        <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get">
+            <p>Please enter any feedback!</p>
+            <textarea row="3" cols="60" name="feedback">
+                Please enter your text here!
+            </textarea>
+            <!--type 'submit has a significant meaning, it submits the form. If it was simply button, then nothing will be submitted-->
+            <input type="submit" value="Send">
+        </form>
+        
+        <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get">
+            <p>Please enter any feedback you have!</p>
+            <textarea rows=3 cols=60 name="feedback">
+                Please enter your text here!
+            </textarea>
+            <br>
+            <input type="submit" value="Send!">
+        </form>
+        
+        <form>
+            Please enter your name. <br>
+            <input type="text" name="feedback"> <br> <br>
+            
+            Please select each of the following that you have. <br>
+            <input type="checkbox" name="items" value="car">Car <br>
+            <input type="checkbox" name="items" value="teddy bear">Teddy bear <br>
+            <input type="checkbox" name="items" value="toothbrush">Toothbrush <br> <br>
+            
+            Please indicate your intelligence level. <br>
+            <input type="radio" name="iq" value="high" checked>High <br>
+            <input type="radio" name="iq" value="medium">Medium <br>
+            <input type="radio" name="iq" value="low">Low <br>
+            <br>
+        </form>
+        
+        <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="get">
+            <p>Password Please!</p>
+            <input type="password" name="userpassword"> <br> <br>
+            <input type="submit" name="Submit"> <br>
+        </form>
+        
+        <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method="post" enctype="multipart/form-data">
+            <p>What city to go to?</p>
+            <select name="cities" required autofocus>
+                <option value="hk">Hong Kong</option>
+                <option value="vc">Vancouver</option>
+                <option value="sf">San Francisco</option>
+            </select>
+
+            <label for="firstname">First name:</label>
+            <input type="text" id="firstname" name="firstname" value="Dave" autofocus>
+            <br>
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Your last name goes here">
+            <br>
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required>
+            <br>
+            <input type="file" name="fileUpload"> <br>
+            <input type="submit" value="Submit">
+            <!--id is used within the html page, name is used on the server side-->
+        </form>
+        <!--value="something" fixes what is shown at the start. placeholder="somthing" shows useful text which disappears when user enters something. autofocus sets which field is given at the start. require sets a field to be must completed-->
+        
+        <!--enctype="multipart/form-data" specifies how the form data should be encoded when submitting to the server. There are application/x-www-form-urlencoded, which codes all characters. multipart/form-data encodes nothing. text/plain converts spaces into + symbols-->
+        
+        <!--html5 new input elements-->
+        <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php">
+          <label for="age">Your age:</label>
+          <input type="number" min="0" max="99" step="1" value="18" id="age" name="age" required><br>
+          <label for="birthday">Your birthday:</label>
+          <input type="date" id="birthday" name="birthday"><br>
+          <label for="wakeup">You want to wake up at:</label>
+          <input type="time" id="wakeup" name="wakeup"><br>
+          <label for="color">Your favorite color:</label>
+          <input type="color" id="color" name="color"> <br>
+          <label for="mood">Your mood:</label>
+          Bad <input type="range" min="0" max="100" step="5" value="50" id="mood" name="mood"> Good<br>
+          <input type="submit" value="Submit!">	<br> <br>
+        </form> 
+        
+        <!--element grouping, good for visual and programming clarity-->
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend> <br>
+                First name? <input type="text" name="firstName"> <br>
+                Last name? <input type="text" name="lastName"> <br>
+            </fieldset> <br>
+            
+            <fieldset>
+                <legend>Favourite things</legend> <br>
+                First name? <input type="text" name="firstName"> <br>
+                Last name? <input type="text" name="lastName"> <br>
+            </fieldset> <br>
+        </form>
+    </body>
+</html>

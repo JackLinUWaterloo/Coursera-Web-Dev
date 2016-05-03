@@ -1,0 +1,28 @@
+Bootstrap tooltips, popovers and modals:
+  -revealing content upon interacting with element on the web page
+  -information displayed as an overlay
+  -order of flexibility
+    -Tooltip > popover > modal
+
+  -Tooltip
+    -simplest way to display content
+      -pops up when the user hovers over an element
+    -three attributes
+      -data-toggle="tooltip"
+      -data-placement="top|bottom|left|right"
+    -javascrip code to be included
+
+  -Popover
+    -includes a title and content
+      -pops up when the user clicks on an element
+    -four attributes
+      -data-toggle="tooltip"
+      -data-placement="top...."
+      -title="message title"
+      -data-content="message string"
+    -javascript code to be included
+
+  -Modals
+    -more detailed information can be presented than tooltips and popovers
+    -modal contains header, body and footer
+    -can use the bootstrap grid in the body to organize content

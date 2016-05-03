@@ -1,0 +1,33 @@
+Bootstrap navbar:
+  -designed to provide a navigation header for your website
+  -supports responsive behaviour
+    -can start collapsed on xs screens
+    -include a toggle button to show/collapse items
+
+  A simple navbar:
+    e.g.
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li class="active"> <a href="#">Home</a><li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    -a navbar header can be added, use navbar-brand class
+    -"navbar-toggle collapsed" classes are used to collapse the navbar
+
+  Positioning navbar:
+    -.navbar-fixed-top and .navbar-fixed-bottom
+      -fixer to top/bottom of window and does not scroll
+    -.navbar-status-top
+      -full-width navbar at the top that scrolls
+    -.navbar-inverse
+      -dark navbar with light text
+
+  Navbar dropdown:
+    -<span class="caret"></span> is used to show an upside down triangle for
+     dropdown navbar button
+    -a separator or a dropdown-header can be used in a navbar dropdown

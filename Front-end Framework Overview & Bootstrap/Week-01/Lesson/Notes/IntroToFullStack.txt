@@ -1,0 +1,27 @@
+What is full stack development?
+
+Front-end(Client-side):
+  -HTML, CSS and Javascript
+
+Back-end(Server-side):
+  -various technologies and approaches
+  -PHP, Java, Ruby, Python...etc.
+
+Full stack:
+  Three Tier Architecture:
+    -Presentation layer(front-end): concerned with UI related issues
+      -HTML, CSS, JS
+    -Business logic layer(back-end): data validation, dynamic content processing
+      -Implmented in a server using Ruby, Python, Java C++, or PHP which talks to DBMS and
+       to exchange data and in turn it generates front end display data to the user
+       by server-side rendering of HTML, CSS, and Javascript
+    -Data access layer(data-management): data persistence, data access through an API
+      -DBMS(Data Base Management system)
+
+  Full stack JS development:
+    -Presentation layer: Single page Apps using JS frameworks like AngularJS
+      -focusing on HTML, CSS, Javascript, UI framework with Bootstrap, JS framework with AngularJS
+    -Business logic layer: NodeJS and NodeJS modules, delivers REST API
+      -focusing on BaaS, NodeJS modules, and NodeJS
+    -Data access layer: MongoDB, based on storing JSON(JavaScript Objection Notation) documents
+      -focusing on MongoDB

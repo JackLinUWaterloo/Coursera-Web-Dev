@@ -1,0 +1,33 @@
+Navigation and navigation bar
+  Why use navigations?
+    -websites are rarely single paged
+    -need to provide visitors an intuitive means of getting around your website
+    -several commonly used navigation patterns used on websites
+
+  Information architecture:
+    -structure of a system with respect to the way to information is organized,
+     labeled, and navigation methods provided to access the information
+    -need to consider when designing websites
+    -dictates the provisioning of navigation on websites
+
+  Navigations bars:
+    -users often expect it a the top of the website
+    -contains links to various pages with in your website
+    -dos and don'ts
+      +use simple, user-friendly terms
+      +standardized navigation
+      +provide indication of the location within the navigation hierarchy
+      +use standard web conventions:
+        -clicking on a logo take you back to home page
+      -have too many items
+      -use generic labels
+    -breadcrumbs
+      -secondary navigation
+        -usually placed below the primary navigation and above the content
+      -indicator of the current page's location within a navigational hierarchy
+        -path based: set of steps
+        -location based: hierarchy
+        -attribute based: set of choices
+  -Other navigation aids
+    -tabs, pills, pagination, dropdowns, accordion, tags/tag clouds, scroll spy, and
+     affix

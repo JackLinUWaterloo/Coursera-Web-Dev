@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--This is a comment-->
+<!--Notes:
+    -HTML commands are called elements
+    -elements usually starts and ends with a tag
+        -e.g. <p></p>
+-->
+
+<html>
+    <!--head element displays information about the web page-->
+    <head>
+        <!--browser only takes the first title as webpage title-->
+        <title>Sample Web Page, this line gets ignored</title>
+        <!--This is a meta tag, which provides information about the webpage-->
+        <meta name="author" content="Jack Lin">
+        <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+        <meta charset = "UTF-8">
+
+        <!--linking to a separate file-->
+        <!--
+        <link rel="stylesheet" href="styerules.css">
+        <script src="mycode.js"></script>
+        <base href="http://www.helloworld.com" target="_blank"> -->
+    </head>
+    <!--body is what is displayed on the webpage-->
+    <body>
+        <!--Common HTML elements-->
+        <!--This a header (heading 1)-->
+        <h1 id="here">My Web Page</h1>
+        <h6>Smaller Heading</h6>
+        <!--This is a paragraph-->
+        <p>Hello World!</p>
+        
+        <h1>INTRODUCTION TO SOMETHING</h1>
+        <h2>AN AREA OF SOME SORT</h2>
+        <!--section is more for html structure purposes, it changes a smaller font when heading tag is added-->
+        <section>
+            <h1>Intro to HTML</h1>
+            <p>Let's talk about it!</p>
+        </section>
+        
+        <ul> <!--ul=unordered list-->
+            <li>Number 1</li>
+            <li>Number 2</li>
+            <li>Number 3</li>
+        </ul>
+        
+        <ol start=3 reversed><!--ol=ordered list, a starting value can be added, order can also be reversed(e.g. start=4, then 4, 3, 2, 1-->
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+        <ol type='A'> <!--Can use alphabets instead of numbers-->
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cat</li>
+        </ol>
+        
+        <!--html text formatting-->
+        <!--<i></i>stands for italic-->
+        <p>Hello <i>Bob</i>, how are you?</p>
+        <!--<em></em>stands for emphasis, they look the same as <i></i>-->
+        <p>You <em>stop</em> right there!</p>
+        <!--<b></b>stands for bold-->
+        <p>Hello <b>Bob</b>!</p>
+        <!--<strong></strong>works the same as <b></b>-->
+        <p>Hello <strong>Bob</strong>!</p>
+        <!--<u></u>stands for underline, try avoid this, it is confusing-->
+        <p>Hello, <u>BOB</u>!</p>
+        <!--<big></big>is not part of last html, try to avoid-->
+        <p>Damn, that's <big>big</big>, and dang, that's <small>small</small>.</p>
+        <p><mark>marked</mark></p>
+        <!--better to use <sub><sup> as footnotes-->
+        <p>Hello, <sub>subscript</sub>!</p>
+        <p>Hello, <sup>superscript</sup>!</p>
+        <p>Hello, <ins>insert</ins>.</p>
+        <p>Hello, <del>deleted</del>.</p>
+        
+        <!--Multimedia-->
+        <!--Images-->
+        <img src="C:\Users\Jack\Desktop\Web Dev\Samples\lion.jpg" width="50%" height="300"/>
+        <!--audio-->
+        <audio src="C:\Users\Jack\Desktop\Web Dev\Samples\I Heart Sharks - Anthems Tour.mp3" controls>
+            <p>Sorry, your browser does not support</p>
+        </audio> <!--autoplay or loop  as an attribute also works--> <!--if browser does not support, message gets shown-->
+        <video src="C:\Users\Jack\Desktop\Web Dev\Samples\SampleVideo_1280x720_1mb.mp4" controls alt="Rabbit">
+            <p>sorry, your browser does not support</p>
+        </video> <!--autoplay also works-->
+        
+        <!--links-->
+        <a href="https://www.google.ca/">Google</a> <!--a means anchor (attaching an attribute to e.g. text)-->
+        <a href="https://www.google.ca/"><img src="C:\Users\Jack\Desktop\Web Dev\Samples\lion.jpg"></a>
+        
+        <!--positioning within a page-->
+        <a href="#here">top</a>
+        <!--jump to another web page or the same-->
+        <a href="Sample Web Page.html#here">there!</a>
+        
+        <!-- we can use Lorem Ipsum(latin), used to create temporary text-->
+        
+        <!--void elements: elements without contents, does not use an end tag since there are no contents, can have different attributes. e.g. meta tag is a void element.-->
+        <p>Hello <br> there</p>
+        <p>Helloajh<wbr>;lkajl;k;dadfadfasdfadsfasdlsga</p>
+        <br> <!--break-->
+        <wbr> <!--optional break, depends on browser sizing-->
+        <hr> <!--thematic break (line)-->    
+    </body>
+</html>

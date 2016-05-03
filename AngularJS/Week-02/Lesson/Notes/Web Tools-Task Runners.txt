@@ -1,0 +1,35 @@
+Web Tools:
+    Task Runners:
+        -web dev involves a lot of repetitive tasks
+        -the DRY (do not repeat yourself) principle
+        -need for build tools to automate tasks
+
+    CSS Tasks:
+        -compiling Sass or Less into CSS
+        -running Autoprefixer to add any vendor prefixes that are needed
+        -minification: removing unnecessary characters(white spaces, newlines,
+        comments) from source code without compromising functionaltiy
+        -concatenation
+
+    JS tasks:
+        -JSHint: checking JS code for errors and potential problems(static code
+        analysis)
+        -concatenation
+        -uglification: minification + mangling (reduce local variables to single
+        letters)
+        -rechecking for errors
+
+    Other tasks:
+        -images: optimizing files to reduce file size
+        -watch: watching for changes in files and automatically rerunning tasks
+        -server and livereload
+        -testing
+        -building your site for deployment
+
+    Task runners:
+        -configure the tasks once, and rerun it automatically as many times as needed
+        -server task runners out there: grunt, gulp...
+        -build systems for the web
+
+    Grunt: configuration over code
+    Gulp: code over configuration

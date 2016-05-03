@@ -1,0 +1,22 @@
+User Input:
+  -user input can be facilitated through three approaches
+    -<a> tags to provide hyperlinks
+    -<button> tags to create buttons
+    -<form> to create forms
+      -<input> to create elements in forms
+
+  Buttons:
+    -simple interaction
+    -button behavior dependent on where it is positioned
+      -inside a form it takes on specific role
+      -general purpose outside
+    -<a> can also be styled using CSS to look like a button
+
+  Form:
+    -form elements
+      -<input>
+        -type: text, password, submit, radio, checkbox, button, color, date,
+         datetime, email, month, number, range, search, tel, time, url, week
+      -<textarea>
+      -<button>
+      -<select>

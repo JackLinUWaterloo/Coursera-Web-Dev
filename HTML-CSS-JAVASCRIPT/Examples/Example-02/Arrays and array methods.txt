@@ -1,0 +1,13 @@
+Arrays
+
+var pets = ["Dog", "Cat", "Rabbit"];
+var pets = new Array(10);
+
+array methods:
+-array.length, gives the array length
+-array.join(), convert array into string, a seperator can be passed in as a parameter, the default is ','.
+-array.push(param), adds an element to the end
+-array.unshift(param), adds an element to the front
+-array.pop(), removes the last item, can be assigned to a variable
+-array.shift(), removes the first element in the array
+-array1.concat(array2), combines two arrays into one

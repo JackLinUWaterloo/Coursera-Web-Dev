@@ -1,0 +1,25 @@
+Angular modules and controllers:
+    -Angular in build with MVC in mind
+        -MVC
+        -MVVM
+        -MVW (model-view-whatever)
+            -model, view, and something in between
+
+    Angular modules:
+        -an Angular module is a collection of:
+            -controllers
+            -directives
+            -filters
+            -services
+            -other config info
+        -bootstrapping your application
+        -keeps your code organized, maintainable, and testable
+        -e.g. var app=angular.module('confusionApp', []);
+
+    Angular controller:
+        -JS object containing attributes/properties and functions
+        -exposes variables and functionality to expressions and directives
+        -Controller defined using a ng-controller directive on an HTML element
+        -e.g. ng-controller="menuController as menuCtrl"
+            -create controller:
+                    app.controller('menuController', function(){})

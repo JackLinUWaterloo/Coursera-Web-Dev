@@ -1,0 +1,40 @@
+Advanced use of functions:
+e.g.
+
+var function = function() {};
+or
+var function = function thisFunction() {}
+
+^ created after webpage is loaded, there is a delay, funtion name(){} loads when webpage is loaded
+
+function check(a, b) {
+    if(b != 0) return true;
+    else return false;
+}
+
+function myDivide(fn, num, div) {
+    if(fn(num, div)) {
+        return num/div;
+    } else {
+        alert("NOT OKAY!");
+    }
+}
+
+-Return a function from a function
+e.g.
+function counter() {
+    var count = 0;
+    return function() {
+        count++;
+        alert(count);
+    }
+}
+
+var count = counter();
+count();
+count();
+count();
+
+Example of DOM:
+-meta tag: <meta http-equiv="refresh" content="1">, refreshes the page every one second
+

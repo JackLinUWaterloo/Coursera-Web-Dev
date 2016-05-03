@@ -1,0 +1,3 @@
+Bootstrap collapse:
+  -collapse plugin provides a quick way of revealing and hiding content
+  -toggling of content requires the use of a button or a link to trigger the toggle

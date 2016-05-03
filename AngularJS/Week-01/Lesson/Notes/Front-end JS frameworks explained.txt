@@ -1,0 +1,41 @@
+Front-end JS frameworks:
+    -complexity of managing DOM manipulation and data updates manually
+    -well defined application architectures
+        -MVC
+        -binding of model and view: controllers and views
+
+    Software library:
+        -collection of implementations of behaviours with a well defined interface
+        by which the behaviours is invoked
+        -reuse of behaviour
+        -modularity
+        -e.g. JQuery
+
+    Software framework:
+        -abstraction in which software provides generic functionality that can
+        be selectively changed by additional user-written code
+        -universal, reusable environment that provides particular functionality as
+        part of a larger software plantform
+        -E.g. Angular, Ember, Backbone
+
+    Library vs. Framework:
+        -library: a collection of functions which are useful when writing web apps.
+        Your code is in charge and it calls into the library when it sees fit
+        -frameworks: a particular implementation of a web application, where your
+        code fills in the details. The framework is in charge and it calls into
+        your code when it needs something app specific.
+
+    Framework:
+        -framework is in control, calls functions when it needs to
+        -inversion of control
+        -imperative(instructional and in sequence) vs declarative(specifying what
+        needs to be accomplished instead of how, framework takes care of how)
+        programming
+
+    JS frameworks:
+        -single page application
+            -rich internet applications
+        -MVC
+            -data binding, routing
+        -scalable, reusable, maintainable JS code
+        -test driven development

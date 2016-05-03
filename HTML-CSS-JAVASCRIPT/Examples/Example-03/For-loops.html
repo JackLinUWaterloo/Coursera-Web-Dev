@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!--data_structure.length returns the array length.-->
+
+<html>
+    <head>
+        <script>
+            var continents = ["Australia", "Africa", "Antarctica", "Eurasia", "America"];
+            
+            var response, count = 0;
+            
+            for(var index = 0; index < continents.length; index++) {
+                response = confirm("Have you been to " + continents[index] +"?");
+                
+                if(response) count++;
+            }
+            
+            //for (var index in continents) reads all the elements in the array
+            
+            alert("You have been to " + count + " continents!");
+            
+            //using for loop to go through objects
+            var onePerson = {initials:"DR", age:40, job:"Professor"};
+            
+            for(var property in onePerson) {
+                alert(property + " = " + onePerson[property]);
+            }
+            
+            //for .. of
+            count = 0;
+            for(var continents of continents) {
+                reponse = confirm(continents);
+                
+                if(reponse) count++;
+            }
+            alert("You have been to " + count + "continents");
+            
+            //for(;;) {} will create an infinite loop since no loop conditions are specified
+            
+            //different specifications can be left out in the for loop
+            
+            //for(var rabbit=9, generation=1; generation<=12; generation++, rabbit*=2)
+        </script>
+    </head>
+</html>

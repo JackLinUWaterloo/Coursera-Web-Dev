@@ -1,0 +1,15 @@
+Bootstrap panels and wells:
+  Highlighting content:
+    -sometimes you may wish to highlight some content on your website
+
+  Panel:
+  -panel panel-heading
+    -class="panel-heading"
+    -class="panel-body"
+    -dl = discription list
+      -dt, dd
+
+  Well:
+  -class="well"
+  -blockquote, used for quotes
+  -well-lg and well-sm are also allowed

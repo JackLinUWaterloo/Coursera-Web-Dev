@@ -1,0 +1,6 @@
+With javascript, one is allowed to do var && var2 && var3.
+
+Functions can be used with logical operators, which means if && is used and the first function is false then anything inside the second function won't be excuted. (AND short-circuit)
+
+(OR short-circuit), if first condition is true, second condition will not be excuted.
+

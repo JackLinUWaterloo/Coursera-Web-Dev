@@ -1,0 +1,27 @@
+Bootstrap grid system:
+  Viewport:
+    -a viewport meta tag ensures that the screen width is set to the device 
+     width and the content is rendered with this width in mind
+    -designing the websites to be responsive to the size of the viewport
+
+  Bootstrap grid:
+    -responsive, mobile first, fluid
+    -container class allows the website to be responsive: <div class="container">
+    -rows will span the entire width of the container: <div class="row">
+      -each row is divided into 12 individual columns
+      -content can occupy specified number of columns: <div class="col-sm-5">
+      -a gutter will be created between two div of columns
+    -Bootstrap makes available four classes
+      -xs for extra small
+      -sm for small
+      -md for medium
+      -lg for large
+    -each row in Bootstrap grid system is divided into 12 columns
+    -use the classes for defining the layouts for the various screen sizes
+    -specify how many columns each piece of content will occupy within a row,
+     all adding up to 12 or multiple of
+    -if a screen size is not specified, the small screen size will be used
+    -column push and pull are used to shift contents to the left or right
+    -column offsets (<div class="col-sm-offset-1">), shift to the right by
+     number of columns
+    -

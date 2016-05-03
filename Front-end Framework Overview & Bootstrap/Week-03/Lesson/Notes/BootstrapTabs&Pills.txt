@@ -1,0 +1,13 @@
+Bootstrap tabs, pills, and tabbed navigation:
+  -navigation elements for navigating content within a page that is organized
+   into multiple panes, nav-tabs or nav-pills
+
+  -nav-justified to justify the tabs/pills to stretch the width of the parent
+   with each element sharing its proportion of the width
+  -elements can be disabled using disabled class
+  -pills can be stacked vertically using nav-stacked class
+
+  -content divided into multiple panes
+    -enclose entire content in <div> with tab-content class
+    -each pane should be enclosed inside a <div> with tab-pane class
+    -one pane designated as active

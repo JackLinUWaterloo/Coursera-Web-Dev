@@ -1,0 +1,7 @@
+variable scope, variables within a function can only be used within and after it's declared, called a local variable. 
+
+Global variables can be used anywhere after it's declared. 
+
+When global vars and local vars have the same name, local var takes priority.
+
+When a var is not declared and it's used, it gets automatically declared in javascript as a global variable.

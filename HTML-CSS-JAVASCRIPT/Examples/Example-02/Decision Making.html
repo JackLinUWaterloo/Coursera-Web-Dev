@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var user_name;
+            
+            user_name = prompt("What is your name?");
+            if(user_name == "dave") {
+                alert("Great name!");
+            } else if(user_name == "poop") {
+                alert("YOU SUCK!");
+            } else {
+                alert("WHAT?");
+            }
+            
+            switch(user_name) {
+                case "dave" :{
+                    alert("Great name!");
+                    break;
+                }
+                case "alice": {
+                    alert("Hmm");
+                    break;
+                }
+                case "Canada": {
+                    alert("chose Canada or France");
+                }
+                case "France": {
+                    alert("chose Canada or France");
+                    break;
+                }
+                default: {
+                    alert("no conditions satisfied!");
+                }
+            }
+        </script>
+    </head>
+</html>

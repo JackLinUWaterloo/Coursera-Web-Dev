@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This Page's Got Style</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <!--style rules can be written in header-->
+        <style>
+            body{background-color:antiquewhite}
+            /*making classes*/
+            .zappy {color:red}
+            .wow {background:lightgrey}
+            /*list item in the unorder list will take effect*/
+            ul li {background:yellow}
+            /*pseudo-classes(intelligent classes)*/
+            h1:hover {color:red}
+            a:link {color:red}
+            a:visited {color:orange}
+            a:active {color:blue}
+            p:empty {
+                width: 100px;
+                height: 20px;
+                background: green;
+            }
+            table, td, th {border:1px solid black; padding:15px}
+            td {color:purple}
+            .centerAlign {text-align:center}
+            .verticalCenterAlign {vertical-align:center}
+        </style>
+    </head>
+    
+    <body>
+        <ul id="rainbowColors">
+            <li id="red">Red</li>
+            <li id="orange">Orange</li>
+            <li id="yellow">Yellow</li>
+            <li id="green">Green</li>
+            <li id="blue">Blue</li>
+            <li id="indigo">Indigo</li>
+            <li id="violet">Violet</li>
+        </ul>
+        <h1>Heading 1</h1>
+        <p>Paragraph 1</p>
+        <h1>Heading 2</h1>
+        <p>Paragraph 2</p>
+        
+        <!--using class-->
+        <h2 class="zappy wow">Hello</h2>
+        
+        <!--inline style (higher priority)-->
+        <p style="text-align:right; color:red">Welcome RIGHT!</p>
+        
+        <ul>
+            <li>HI</li>
+            <li>ID has higher priority than generic rules</li>
+        </ul>
+        
+        <p></p>
+        <p>A paragraph.</p>
+        <p>Another paragraph.</p>
+        
+        <!--tables-->
+        <table>
+            <thead>
+                <!--tr=table row, th=table header-->
+                <tr><th>1</th> <th>2</th> <th>3</th></tr>
+            </thead>
+            
+            <tbody>
+                <!--td=table data(boxes)-->
+                <tr> <td>a</td> <td>b</td> <td>c</td> </tr>
+                <tr> <td>d</td> <td>e</td> <td>f</td> </tr>
+            </tbody>
+        </table>
+        <table>
+            <tr><th>Menu</th><th>Price</th></tr>
+            <tr><td>Snail Pizza</td><td>$15</td></tr>
+            <tr><td>Creative Curry</td><td class=verticalCenterAlign>$10</td></tr>
+            <tr><td>Sloppy Salmon</td><td class=centerCenterAlign>$5</td></tr>
+        </table>
+        
+        <!--div: no default style or meaning, used for any purposes. -->
+        <div style="background:red; position:relative; left:60px">
+            Whatt? This can be used as paragraph tags!!!
+        </div>
+        
+        <!--span has no default style, used for a few words-->
+        <span>
+            HIII, this can be used within a paragraph for keywords!
+        </span>
+    </body>
+</html>

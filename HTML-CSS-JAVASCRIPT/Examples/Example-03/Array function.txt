@@ -1,0 +1,15 @@
+Array functions
+
+array.foreach(function), extracts array elements one by one instead of using for loops
+
+e.g. 
+array.forEach(function(params) {
+    array[param] = elem*elem;
+});
+
+map(function) stores the result of each execution of function into an array it returns, does not interfere with the original array.
+e.g.
+var square = function(el) {return el * el};
+var number = [1,2,3];
+var results = number.map(square); 
+//results is equal to 1, 4, 9

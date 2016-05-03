@@ -1,0 +1,24 @@
+Getting started with Bootstrap:
+Method 1(preferred method):
+  -link to bootstrap files through content distribution network(CDN)
+
+Method 2:
+  -in html head, include meta tags that links to bootstrap
+  -also link bootstrap css files
+  -must also include bootstrap javascript files
+
+Bootstrap container class
+  -container for all the content of the site
+  -fixed width(depending on screen size)
+  -use as the outermost div to wrap all the site content for the grid to work
+   correctly
+  -.container-fluid class allows full width container
+
+Bootstrap rows:
+  -divides the page into multiple rows
+  -rows act as horizontal grouping for columns
+  -rows must be inside containers
+
+Boostrap jumbotron:
+  -lightweight, flexible component for showcasing key content
+  -can be used outside a container to span the entire screen width

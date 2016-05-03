@@ -1,0 +1,33 @@
+Bootstrap Images and Media:
+  -<img src="..." class="...">
+  -img-responsive for responsive images
+    -scales nicely with the parent element
+  -shape of image
+    -img-rounded: rounded corners
+    -img-circle: circular image
+    -img-thumbnail: thumbnail image
+
+  -thumbnail class
+    -<div class="thumbnail">
+        -<a href="#">
+        -<img class="media-object img-thumbnail"
+          src="img/ablerto.png"...
+
+  -media object class
+    -<div class="media">
+      -<div class="media-left media-middle">....
+    -media classes
+      -media, media-object media-only, media-heading
+    -positioning
+      -media-left and media-right
+        -media-right div should be placed after media-body div
+      -media-top, media-middle, media-bottom
+    -media list: media-list applied to list <ul> and media classes applied to <li>
+
+  -responsive embed
+    -<div class="embed-responsive embed-responsive-16by9">
+      -<iframe class="embed-responsive-item"...>
+    -embedding media content, e.g., video, and making it responsive
+    -apply embed-responsive-item to <embed>, <iframe>, <video>, <object>
+    -enclosed in <div> and apply embed-responsive and embed-responsive-4by3 or
+     embed-responsive-16by9

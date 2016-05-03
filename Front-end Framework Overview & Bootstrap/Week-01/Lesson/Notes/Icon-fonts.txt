@@ -1,0 +1,19 @@
+Icon fonts:
+  -set of symbols and glyphs
+  -can be used just like regular fonts
+  -can be styled with CSS just like regular fonts
+  -popular lightweight replacement for simple graphics on the website
+  -many icon font packs available
+
+  Some examples icon fonts:
+    -glyphicons
+      -included as part of bootstrap
+      -<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+      -a large set of glyphs available in bootstrap
+    -font awesome
+      -<i class="fa fa-phone"></i>
+    -bootstrap-social
+      -uses bootstrap and font awesome iconts to create buttons for social media
+       sites
+      -buttons for all popular social media sites
+      -include bootstrap-social.css into your project

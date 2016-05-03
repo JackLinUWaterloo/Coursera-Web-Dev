@@ -1,0 +1,25 @@
+Bootstrap JS Components Overview:
+  -Bootstrap provides a number of CSS classes that can be used effectively
+  -components are created by applying the Bootstrap CSS classes
+  -Bootstrap can be used purely for its CSS classes
+
+  -CSS classes for many components start with a base class
+  -further modifiers can be applied with a set of related classes
+    -e.g.
+      btn + btn-default + btn-lg + btn-block
+
+  Bootstrap nav classes:
+    -nav > navbar-nav, nab-tabs, nav-pills
+
+  Bootstrap and JS
+    -Bootstrap's JS support is through JS plugins
+      -plugins written based on Jquery
+      -plugins can be individually include
+    -Javascript > JQuery > Bootstrap JS components
+
+  Using Bootstrap JS plugins
+    -include the javasript files at the bottom of the <body>
+    -JS components can be used without writing a single line of JS
+      -data-* attributes (e.g. data-toggle, data-spy)
+    -full JS API available if needed
+      -need to know JQuery syntax and JS
